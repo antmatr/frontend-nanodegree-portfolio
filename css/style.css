@@ -4,9 +4,9 @@
     box-sizing: border-box;
 }
 
+/* Common styles */
 body {
-    font-size: 14px;
-    font-family: 'Source Sans Pro', sans-serif;
+    font: 14px/1 'Source Sans Pro', sans-serif;
 }
 
 img {
@@ -15,63 +15,17 @@ img {
     max-width: 100%;
 }
 
+.container {
+    max-width: 960px;
+    margin: 0 auto;
+}
+
 .flex-container {
     display: flex;
     -ms-flex-wrap: wrap;
     -webkit-flex-wrap: wrap;
     flex-wrap: wrap;
-}
-
-header {
-    width: 100%;
-    padding-bottom:20px;
-    border-bottom: 2px dashed #000;
-    margin-bottom: 25px;
-    text-align: center;
-}
-
-.header-title {
-    font-weight: 300;
-    margin: 0 auto;
-}
-
-.header-subtitle {
-    font-weight: 400;
-    font-size: 14px;
-    margin: 0 auto;
-}
-
-.portfolio-title {
-    margin: 20px auto 10px;
-    text-align: center;
-}
-
-.portfolio-item {
-    width:100%;
-    text-align:center;
-}
-
-.portfolio-item-title {
-    margin: 10px auto 0;
-    font-size:24px;
-    font-weight:400;
-}
-
-.portfolio-item-link {
-    margin: 0 auto 30px;
-    font-weight:300;
-    font-size:12px;
-}
-
-footer {
-    width:100%;
-    border-top: 2px dashed #000;
-    padding:10px;
-    font-size:12px;
-}
-
-.footer-text {
-
+    justify-content: space-around;
 }
 
 .text-uppercase {
@@ -80,4 +34,97 @@ footer {
 
 .text-muted {
     color: #aaa;
+}
+
+.text-light {
+    font-weight: 300;
+}
+
+.text-normal {
+    font-weight: 400;
+}
+
+.text-bold {
+    font-weight: 700;
+}
+
+/* Header*/
+header {
+    width: 100%;
+    padding-bottom: 20px;
+    border-bottom: 2px dashed #000;
+    margin-bottom: 25px;
+    text-align: center;
+}
+
+.header-title-container {
+    width: 100%;
+}
+
+.header-title {
+    font-weight: 300;
+    font-size: 30px;
+    margin: 0 auto;
+}
+
+.header-subtitle {
+    font-size: 14px;
+    margin: 5px auto 0;
+}
+
+/* Portfolio */
+.portfolio-title {
+    margin: 30px auto 20px;
+    font-size: 22px;
+    text-align: center;
+}
+
+.portfolio-item {
+    text-align: center;
+}
+
+.portfolio-item-title {
+    margin: 10px auto 0;
+    font-size: 24px;
+}
+
+.portfolio-item-link {
+    margin: 5px auto 30px;
+    font-size: 12px;
+}
+
+/* Footer */
+footer {
+    width: 100%;
+    border-top: 2px dashed #000;
+    padding: 10px;
+    font-size: 12px;
+    line-height: 16px;
+    text-align: right;
+}
+
+/* Responsive @media */
+@media screen and (min-width:768px) {
+    header {
+        padding-top: 20px;
+    }
+
+    .logo {
+        align-self: center;
+        margin-left: 5px;
+    }
+
+    .header-title-container {
+        width: auto;
+        margin-right: 15px;
+        align-self: center;
+        text-align: right;
+    }
+
+    .header-title {
+        font-size: 40px;
+    }
+    .portfolio-title {
+    font-size: 30px;
+}
 }

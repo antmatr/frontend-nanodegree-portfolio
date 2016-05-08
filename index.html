@@ -2,84 +2,94 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
     <title>Udacity portfolio project</title>
+    <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Project 4 for Udacity Front-End Nanodegree" />
     <link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,300,700' rel='stylesheet' type='text/css'>
     <link href="https://necolas.github.io/normalize.css/latest/normalize.css" rel="stylesheet" />
     <link href="css/style.css" rel="stylesheet" />
 </head>
 <body>
-    <div class="flex-container">
 
-        <header>
+    <header>
+        <div class="container flex-container">
             <img class="logo" src="img/logo.svg" alt="Antmatr logo" />
-            <h1 class="header-title text-uppercase">
-                Matrosov Anton
-            </h1>
-            <h2 class="header-subtitle text-uppercase text-muted">
-                Front-End Developer
-            </h2>
-        </header>
 
-        <section class="illustration">
-            <picture>
-                <source media="screen and (max-width: 460px)" srcset="http://www.placehold.it/480x640/441111 480w, http://www.placehold.it/960x1280/441111 2x" />
-                <source media="screen and (min-width: 461px)" srcset="http://www.placehold.it/960x500/441111 960w, http://www.placehold.it/1920x1000/441111 2x" />
-                <img src="http://www.placehold.it/960x500/441111" alt="Main illustration" />
-            </picture>
-        </section>
-
-        <section class="portfolio">
-            <h3 class="portfolio-title text-uppercase">Featured works</h3>
-            <div class="flex-container portfolio-items-container">
-
-                <div class="portfolio-item">
-                    <picture>
-                        <source srcset="http://www.placehold.it/320x240/441144, http://www.placehold.it/640x480/441144 2x" />
-                        <img src="http://www.placehold.it/320x240/441144" alt="Work-item preview" />
-                    </picture>
-                    <h5 class="portfolio-item-title text-uppercase">
-                        Portfolio-item
-                    </h5>
-                    <p class="portfolio-item-link text-muted">
-                        portfolio-item link
-                    </p>
-                </div>
-
-                <div class="portfolio-item">
-                    <picture>
-                        <source srcset="http://www.placehold.it/320x240/111144, http://www.placehold.it/640x480/111144 2x" />
-                        <img src="http://www.placehold.it/320x240/111144" alt="Work-item preview" />
-                    </picture>
-                    <h5 class="portfolio-item-title text-uppercase">
-                        Portfolio-item
-                    </h5>
-                    <p class="portfolio-item-link text-muted">
-                        portfolio-item link
-                    </p>
-                </div>
-
-                <div class="portfolio-item">
-                    <picture>
-                        <source srcset="http://www.placehold.it/320x240/114444, http://www.placehold.it/640x480/114444 2x" />
-                        <img src="http://www.placehold.it/320x240/114444" alt="Work-item preview" />
-                    </picture>
-                    <h5 class="portfolio-item-title text-uppercase">
-                        Portfolio-item
-                    </h5>
-                    <p class="portfolio-item-link text-muted">
-                        portfolio-item link
-                    </p>
-                </div>
-
+            <div class="header-title-container">
+                <h1 class="header-title text-uppercase text-light">
+                    Matrosov Anton
+                </h1>
+                <h2 class="header-subtitle text-uppercase text-muted text-normal">
+                    Front-End Developer
+                </h2>
             </div>
-        </section>
+        </div>
+    </header>
 
-        <footer class="text-muted">
-            <p>Matrosov Anton</p>
-            <p>Project 4 for Udacity Front-End Nanodegree</p>
-            <p>2016</p>
-        </footer>
+    <section class="illustration container">
+        <picture>
+            <source media="screen and (max-width: 460px)" srcset="img/illustration_480x640.jpg 1x, img/illustration_960x1280.jpg 2x" />
+            <source media="screen and (min-width: 461px)" srcset="img/illustration_960x640.jpg 1x, img/illustration_1920x1280.jpg 2x" />
+            <img src="img/illustration_960x640.jpg" alt="Main illustration" />
+        </picture>
+    </section>
 
-    </div>
+    <section class="portfolio container">
+        <h3 class="portfolio-title text-uppercase text-muted text-normal">Featured work</h3>
+        <div class="flex-container">
+
+            <article class="portfolio-item">
+                <picture>
+                    <source srcset="http://www.placehold.it/300x200/441144, http://www.placehold.it/600x400/441144 2x" />
+                    <img src="http://www.placehold.it/300x200/441144" alt="Work-item preview" />
+                </picture>
+                <h5 class="portfolio-item-title text-uppercase text-normal">
+                    Appify
+                </h5>
+                <p class="portfolio-item-link text-muted text-light">
+                    https://github.com/udacity/Appify
+                </p>
+            </article>
+
+            <article class="portfolio-item">
+                <picture>
+                    <source srcset="http://www.placehold.it/300x200/111144, http://www.placehold.it/600x400/111144 2x" />
+                    <img src="http://www.placehold.it/300x200/111144" alt="Work-item preview" />
+                </picture>
+                <h5 class="portfolio-item-title text-uppercase text-normal">
+                    Sunflower
+                </h5>
+                <p class="portfolio-item-link text-muted text-light">
+                    https://github.com/udacity/Sunflower
+                </p>
+            </article>
+
+            <article class="portfolio-item">
+                <picture>
+                    <source srcset="http://www.placehold.it/300x200/114444, http://www.placehold.it/600x400/114444 2x" />
+                    <img src="http://www.placehold.it/300x200/114444" alt="Work-item preview" />
+                </picture>
+                <h5 class="portfolio-item-title text-uppercase text-normal">
+                    Bokeh
+                </h5>
+                <p class="portfolio-item-link text-muted text-light">
+                    https://github.com/udacity/Bokeh
+                </p>
+            </article>
+
+        </div>
+    </section>
+
+    <footer class="text-muted">
+        <div class="container">
+            <p>
+                Matrosov Anton <br />
+                Project 4 for Udacity Front-End Nanodegree <br />
+                2016
+            </p>
+        </div>
+
+    </footer>
+
 </body>
 </html>
